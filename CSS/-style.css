@@ -1,0 +1,83 @@
+* {padding: 0; margin: 0; font-family: Artegra Sans; font-size: 10px; color: #241C55;}
+html {height: 100%;}
+body {min-height: 100%;}
+
+
+input {padding: 10px 15px;  background: #F0F0F0; border-radius: 3px; border: none;}
+input[type="submit"] {cursor: pointer;}
+.password {position: relative; }
+.password::before { content: ""; cursor: pointer; position: absolute; top: -10px;  bottom: 0;  right: 10px; width: 20px;  background: url(../IMG/eye.png);  background-position: center; background-repeat: no-repeat;}
+.password:hover::before { background: url(../IMG/eye_closed.png); background-position: center; background-repeat: no-repeat;}
+
+a {text-decoration: none; display: block;}
+a.button {border: 1px solid #6667AB; border-radius: 3px; padding: 10px 15px; text-align: center;}
+
+form div {width: 100%;}
+form {display: flex; flex-direction: column; align-items: center; width: 55%;}
+.formName {margin-bottom: 80px;}
+form input, a.button {margin-bottom: 10px; width: -webkit-fill-available;}
+form input[type="submit"] {width: 100%;}
+form input[type="password"] {padding-right: 40px;}
+
+form input[type="checkbox"] {display: none;}
+form label {display: block; width: 20px;  height: 20px; background: url(../IMG/box_false.png); background-position: center; background-repeat: no-repeat; background-size: contain;}
+form input[type="checkbox"]:checked+label { background: url(../IMG/box_true.png); background-position: center; background-repeat: no-repeat; background-size: contain;}
+
+.agreement {display: flex; justify-content: space-around; margin-bottom: 15px; align-items: center;}
+.agreement a {display: inline-block; font-size: 10px !important; text-decoration: underline;}
+.agreement p {width: 65%;}
+
+.title {text-align: center; font-weight: 600; padding: 15px; background: linear-gradient(90.79deg, #6667AB 0%, #5B5CAC 100%); color: #fff; position: relative;}
+#formRegistration, #formAuthorization {position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.data .item {display: flex; padding-top: 10px; justify-content: space-between; width: 90%; margin: auto;}
+.data .item > .item {padding: 0; justify-content: left; margin: 0;}
+.data .item.categoryName, .data .item.user {justify-content: left;}
+.data .item.user div:first-child {padding-right: 20px;}
+.data .item.categoryName p {width: auto !important; white-space: nowrap; padding-right: 20px;}
+#myProfile > .data .item p:first-child, .data .item.user p:first-child {width: 170px;}
+#myProfile > .data .item input, #myProfile > .data .item p:last-child, #myProfile > .data .item label {width: 100%;}
+#myProfile > .data .item input {margin-left: 10px;}
+#myProfile > .data .item {align-items: center;}
+#myPortfolio .data .item, #notifications .data .item {align-items: center;}
+.data .item hr {width: 100%; border: 2px solid #A8A9D1;}
+
+/*h6, .h6 {font-size:24px;}
+h5, .h5 {font-size:18px;}
+h4, .h4 {font-size:14px;}
+h3, .h3 {font-size:12px;}*/
+
+h6, .h6 {font-size:24vmin;}
+h5, .h5 {font-size:18vmin;}
+h4, .h4 {font-size:14vmin;}
+h3, .h3 {font-size:12vmin;}
+
+.menu {height: 60px;} 
+.menu ul {display: flex; list-style: none; align-items: center; border-top: 2px solid #A8A9D1; margin-top: 20px; background: #fff; position: fixed; left: 0; right: 0; bottom: 0;}
+.menu ul li {cursor: pointer; width: 100%; text-align: center; filter: contrast(0);}
+.menu ul li a {padding: 10px 0; display: block; height: 30px;}
+.menu ul li:hover {filter: contrast(1); box-shadow: 0 0 2px #5c5dac;}
+
+.formName {color: #000; font-weight: 600;}
+
+#formRegistration input, #formAuthorization input, #formRegistration a, #formAuthorization a  {font-size: 14px; font-weight: 500;} 
+#formRegistration input[type="submit"], #formAuthorization input[type="submit"] {background: linear-gradient(90.79deg, #6667AB 0%, #5B5CAC 100%); border-radius: 3px; color: #fff;} 
+
+.title::after {content: ""; position: absolute; top: 0px;  bottom: 0;  left: 10px; width: 30px; cursor: pointer; background: url(../IMG/leftButton.png);  background-position: center; background-repeat: no-repeat;}
+
+.userName {font-weight: 600; line-height: 20px;}
+.user hr {margin: 10px 0; width: 60% !important;}
+.user a, .user p {margin-bottom: 5px}
+.user {padding: 10px 0; padding-top: 30px !important;}
+.user input {color: #A8A9D1 !important;}
+input[type="file"] {display: none;}
+.item label {cursor: pointer; color: #A8A9D1;}
+
+.categoryName .weight-600 {color: #A8A9D1;}
+
+.weight-600 {font-weight: 600;}
+.weight-500 {font-weight: 500;}
+
+
+#notifications img {max-width: 50px; }
+
+.message {color: #A8A9D1; margin: 15px auto; text-align: center;}
